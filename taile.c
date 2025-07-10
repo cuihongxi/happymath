@@ -85,11 +85,10 @@ double taile(fun_t fun, fun_drv f_drv, unsigned char times, double x, double x0)
 // 测试函数
 void main()
 {
-    double x = 90 * 3.1415926 /180;  // 要计算的点90°
+    double x = 181 * 3.1415926 /180;  // 要计算的点
     double x0 = 30 * 3.1415926 /180; // 展开点 30°
-    unsigned char times = 5; // 展开次数
 
-    double result = taile(sin, fun_derivative, 30, x, x0);
+    double result = taile(sin, fun_derivative, 25, x, x0);
     printf("泰勒展开结果: %lf\n", result);
 }
 
